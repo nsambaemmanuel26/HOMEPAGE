@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="page-container">
+        <header>
+             <nav>
+             <a href="index.html">Home</a>| 
+             <a href="about-us.html">About Us</a>|
+             <a href="activities.html">Activities</a>|
+             <a href="gallery.html">Gallery</a>|
+             <a href="contact-us.html">Contact Us</a>|
+             <a href="location.html">Location</a>
+            </nav>
+        </header>
+       
+        <h1 class="site-header">
+            <div class="brand">
+
+           <img src="./images/logo.png" alt="school logo" class="logo">
+           <h1>KITALA SENIOR SECONDARY SCHOOL</h1>
+         </div>
+          
+         <div class="contact" style="float: right; text-align: right;" background-color: aqua;>
+               email:kitalasecondaryschool@gmail.com | Contact:+256393103405
+         </div>
+        </h1>
+        <h2>GALLERY</h2>
+        
+      <div class="slider">
+       <img src="images/picture2.jpg" alt="picture2" class="slide active">
+       <img src="images/picture1.jpg" alt="picture1" class="slide">
+       <img src="images/picture3.jpg" alt="picture3" class="slide">
+       <img src="images/picture4.jpg" alt="picture4" class="slide">
+      </div>
+
+       <!-- ================= GALLERY ================= -->
+        <section class="gallery container" id="gallery">
+            <p class="section-label">GALLERY</p>
+            <h3>KITALA SSS GALLERY</h3>
+
+            <div class="gallery-grid">
+                <article class="card">
+                     <h2>COMPUTER LAB</h2>
+                    <img src="images/pic6.jpg" alt="computer lab">
+                    <div class="card-content">
+                        <p>KITALA SSS Computer laboratory.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2>S.4 2023</h2>
+                    <img src="images/pic5.jpg" alt="S.4 2023">
+                    <div class="card-content">
+                        <p>Students of S.4 2023 during an English lesson taught by the Dean of Studies.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2>A LEVEL BLOCK</h2>
+                    <img src="images/pic8.jpg" alt="A level block">
+                    <div class="card-content">
+                        <p>The ground floor for the proposed A LEVEL block building</p>
+                    </div>
+                </article>
+
+                 <article class="card">
+                    <h2>LIBRARY</h2>
+                    <img src="images/picture4.jpg" alt="library">
+                    <div class="card-content">
+                        <p>KITALA S.S.S has a fully equiped library.</p>
+                    </div>
+                </article>
+                 <article class="card">
+                    <h2>S.4 RESULTS 2025</h2>
+                    <img src="images/s4-1.jpeg" alt="S.4 results 2025">
+                    <div class="card-content">
+                        <p>Results for S.4 students in 2025.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+        
+      <footer class="footer">
+       <p>&copy;2026 Kitala S.S.S</p>
+      </footer>
+      <script>
+       let current = 0;
+       const slides = document.querySelectorAll('.slide');
+       setInterval(() => {
+       slides[current].classList.remove('active');
+       current = (current + 1) % slides.length;
+       slides[current].classList.add('active');
+       }, 3000);
+      </script>
+</body>
+</html>

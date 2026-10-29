@@ -1,45 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMMANUEL NSA</title>
+    <title>EMMANUEL NSAMBA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<center>  <header>
-
-    <b><nav style="font-size: 28px;">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact Us</a>
-    </nav></b>
-
-  </header>
-
-  <h1 style="color: green; font-size: 36px;">KITALA SENIOR SECONDARY SCHOOL</h1>
-
-  <p style="color: blue; font-size: 22px;">kitalasecondaryschool@gmail.com <br>
-Contact:+256393103405
-</p>
-
-<img src="logo.png" alt="school logo" width="500" height="500"></center> 
-
-<p style="color: black; font-size: 22px;">
- Kitala Secondary School is a grant – aided government school.
-<br>
-Ministry registration and UNEB Center Number: U2712
-
-</p>
 
 
-
-<footer>
-
-    <p style="color: black; font-size: 18px;">2026 Kitala Senior Secondary School. All rights reserved. <br>NSAMBA EMMANUEL</p>
+<body style="font-family: Arial, sans-serif;">
+   <div class="page-container">
+      <header>
+      <nav>
+          <a href="index.html">Home</a>| 
+          <a href="about-us.html">About Us</a>|
+          <a href="activities.html">Activities</a>|
+          <a href="gallery.html">Gallery</a>|
+          <a href="contact-us.html">Contact Us</a>|
+          <a href="location.html">Location</a>
+         </nav>
+          </div>
    
-</footer>
+      </header>
+     
+        <h1 class="site-header">
+            <div class="brand">
+             <img src="./images/logo.png" alt="school logo" class="logo">
+                <div class="contact" style="float: right; text-align: right;" background-color: aqua;>
+                 <h1>KITALA SENIOR SECONDARY SCHOOL</h1>
+                 email:kitalasecondaryschool@gmail.com | Contact:+256393103405
+                </div>
+            </div>
+          <form class="search">
+           <input type="text" placeholder="Search...">
+           <button type="submit">Search</button>
+          </form>
+        </h1>
+  
+      <h2>
+       <p>Welcome to Kitala Senior Secndary School</p>
+      </h2>
+
+      <div class="slider">
+       <img src="images/picture2.jpg" alt="picture2" class="slide active">
+       <img src="images/picture1.jpg" alt="picture1" class="slide">
+       <img src="images/picture3.jpg" alt="picture3" class="slide">
+       <img src="images/picture4.jpg" alt="picture4" class="slide">
+      </div>
+
+      <div class="school-info" style="border: 2px solid black; background-color: whitesmoke; padding: 20px; border-radius: 20px; margin: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); color: rgb(48, 45, 45);">
+        <p>
+        Kitala Secondary School is a grant – aided government school. <br>
+        Ministry registration and UNEB Center Number: U2712 <br>
+       It started in 2000 as a community school and as an Oꞌlevel school and was later upgraded to an Aꞌlevel secondary school in 2008.
+       </p>
+      
+
+      <h3>
+       LOCATION
+      </h3>
+      <article>
+       The school is found in Busiro County, Katabi Town Council, Kitala Parish in Kitala village. <br> It is located 23km from Kampala city on the Kampala – Entebbe highway and less than a kilometre off the road that goes to Kitala Prisons. <br> It is directly opposite the Kitala Prisons and Kitala health center II and sits on 3.8 acres of land.
+      </article>
+
+      <h4>
+       MISSION:
+       <p>To professionally deliver quality education to students for community empowerment and development.</p>
+       </h4>
+    
+      <h5>
+       VISION:
+       <P>To provide a premier learning environment for studentsꞌ success and community enrichment.</P>
+      </h5>
+    
+      <h6>
+       <b> MOTTO:
+       <p>Striving for greater heights.</p> <br>
+
+       GOAL:
+       <p>Improve quality and equity of education under USE.</p> <br>
+
+       CORE VALUES:
+       <p>God – fearing, integrity, accountability, transparency. </p></b>
+
+       </h6></b>
+      </div>
+
+      <footer class="footer">
+       <p>&copy;2026 Kitala S.S.S</p>
+      </footer>
+
+      <script>
+       let current = 0;
+       const slides = document.querySelectorAll('.slide');
+       setInterval(() => {
+       slides[current].classList.remove('active');
+       current = (current + 1) % slides.length;
+       slides[current].classList.add('active');
+       }, 3000);
+      </script>
+
+   </div>
 </body>
 </html>
